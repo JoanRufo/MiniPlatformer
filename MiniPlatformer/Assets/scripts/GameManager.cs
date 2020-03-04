@@ -25,13 +25,6 @@ public class GameManager : MonoBehaviour
         if (playing == true)
         {
             m_textPuntuacion.text = "Puntos: " + m_Puntuacion;
-            m_textVidas.text = "Vidas: " + m_Vidas;
-
-            if (m_Vidas <= 0)
-            {
-                m_GameOverPanel.SetActive(true);
-
-            }
         }
     }
 
