@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Arnaau.unity
+- path: Assets/Scenes/Joan.unity
   isLoaded: 1
   isActive: 1
