@@ -13,18 +13,18 @@ public class GameManager : MonoBehaviour
     [HideInInspector] public int m_Vidas = 3;
     public GameObject m_GameOverPanel;
     public GameObject m_MenuPrincipal;
-    // Use this for initialization
+   
     void Start()
     {
 
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
         if (playing == true)
         {
-            m_textPuntuacion.text = "Puntos: " + m_Puntuacion;
+           // m_textPuntuacion.text = "Puntos: " + m_Puntuacion;
         }
     }
 
