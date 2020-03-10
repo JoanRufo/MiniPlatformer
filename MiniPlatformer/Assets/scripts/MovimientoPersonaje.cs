@@ -6,7 +6,6 @@ public class MovimientoPersonaje : MonoBehaviour {
 
     private GameManager m_GameManager;
     public float m_Speed;
-    public GameObject SpawnSalto;
     bool salto = false;
     bool suelo;
     public Rigidbody2D personaje;
@@ -35,7 +34,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 
         }
 
-         if (Input.GetKeyUp(KeyCode.Space)&& suelo == true)
+         if (Input.GetKeyDown(KeyCode.Space)&& suelo == true)
          {
             personaje.AddForce(Vector3.up * m_Speed, ForceMode2D.Impulse); 
             

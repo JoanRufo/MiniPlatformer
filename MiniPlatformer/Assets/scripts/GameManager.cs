@@ -24,7 +24,11 @@ public class GameManager : MonoBehaviour
     {
         if (playing == true)
         {
+<<<<<<< HEAD
            // m_textPuntuacion.text = "Puntos: " + m_Puntuacion;
+=======
+            //m_textPuntuacion.text = "Puntos: " + m_Puntuacion;
+>>>>>>> efc9e0b00e41be39f3ea95669e4c93f5317d74d5
         }
     }
 
