@@ -9,6 +9,7 @@ public class MovimientoPersonaje : MonoBehaviour {
     bool salto = false;
     bool suelo;
     public Rigidbody2D personaje;
+    bool plataforma;
 
     
     void Start () {
@@ -34,7 +35,7 @@ public class MovimientoPersonaje : MonoBehaviour {
 
         }
 
-         if (Input.GetKeyDown(KeyCode.Space)&& suelo == true)
+         if (Input.GetKeyDown(KeyCode.Space)&& (suelo == true || plataforma == true))
          {
             personaje.AddForce(Vector3.up * m_Speed, ForceMode2D.Impulse); 
             
@@ -46,11 +47,16 @@ public class MovimientoPersonaje : MonoBehaviour {
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("suelo"))
+        if (collision.gameObject.CompareTag("suelo")) 
         {
             suelo = false;
+            
 
         }
+        if (collision.gameObject.CompareTag("plataforma"))
+            {
+            plataforma = false;
+            }
        
     }
 
@@ -60,7 +66,13 @@ public class MovimientoPersonaje : MonoBehaviour {
         {
             suelo = true;
 
+
         }
+        if (collision.gameObject.CompareTag("plataforma"))
+        {
+            plataforma = true;
+        }
+
     }
 
 }

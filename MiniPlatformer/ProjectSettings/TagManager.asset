@@ -6,6 +6,7 @@ TagManager:
   tags:
   - GameManager
   - suelo
+  - plataforma
   layers:
   - Default
   - TransparentFX
