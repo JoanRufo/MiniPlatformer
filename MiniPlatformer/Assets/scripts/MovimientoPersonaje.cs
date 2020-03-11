@@ -114,9 +114,12 @@ public class MovimientoPersonaje : MonoBehaviour {
 
         if (collision.gameObject.CompareTag("Dead_Zone"))
         {
-            Destroy(m_personaje);
+            Destroy(collision.gameObject);
         }
 
     }
 
 }
+
+
+
