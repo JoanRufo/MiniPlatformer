@@ -61,8 +61,13 @@ public class MovimientoPersonaje : MonoBehaviour {
                 m_destino = transform.position - m_dashDistance;
                 
             }
+            currentCD_dash = 0;
 
 
+        }
+        if (currentCD_dash < CDMax_dash)
+        {
+            currentCD_dash += Time.deltaTime;
         }
 
         if (m_dash == true)
