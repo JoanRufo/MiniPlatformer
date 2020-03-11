@@ -8,12 +8,12 @@ public class PlataformaLateral : MonoBehaviour {
     public GameObject SpawnIz;
     public GameObject SpawnDe;
     bool MovimientoDerecha;
-    // Use this for initialization
+    
     void Start () {
         m_GameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
     }
 	
-	// Update is called once per frame
+	
 	void Update () {
         if (MovimientoDerecha)
         {
@@ -35,3 +35,4 @@ public class PlataformaLateral : MonoBehaviour {
 
     }
 }
+

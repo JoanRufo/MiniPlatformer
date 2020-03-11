@@ -7,6 +7,7 @@ TagManager:
   - GameManager
   - suelo
   - plataforma
+  - Dead_Zone
   layers:
   - Default
   - TransparentFX

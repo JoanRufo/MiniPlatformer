@@ -16,6 +16,7 @@ public class MovimientoPersonaje : MonoBehaviour {
     bool m_plataforma;
     public float currentCD_dash;
     public float CDMax_dash;
+    
 
 
     
@@ -104,6 +105,11 @@ public class MovimientoPersonaje : MonoBehaviour {
         if (collision.gameObject.CompareTag("plataforma"))
         {
             m_plataforma = true;
+        }
+
+        if (collision.gameObject.CompareTag("Dead_Zone"))
+        {
+            Destroy(m_personaje);
         }
 
     }
